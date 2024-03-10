@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package grpcTest;
+
+option go_package = "github.com/eonias189/grpc-test/gen/go/proto";
+
+message Request {
+    string value = 1;
+}
+
+message Response {
+    string res = 1;
+}

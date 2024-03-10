@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package grpcTest;
+import "proto/models.proto";
+
+option go_package = "github.com/eonias189/grpc-test/gen/go/proto";
+
+service Reverser {
+    rpc Reverse (Request) returns (Response) {};
+}
+
+service Streamer {
+    rpc Reverse (stream Request) returns (stream Response) {}
+}
